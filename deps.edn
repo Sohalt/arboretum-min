@@ -1,0 +1,6 @@
+{:deps {io.github.nextjournal/clerk {:git/sha "d80187013d7b7b96db3d8b114b8d99f687170668"}}
+
+ :aliases
+ {:nextjournal/launch {:exec-fn nextjournal.clerk/serve!
+                       :exec-args {:browse? false
+                                   :watch-paths ["notebooks"]}}}}
