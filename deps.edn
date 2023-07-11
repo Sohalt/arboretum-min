@@ -1,6 +1,7 @@
-{:deps {io.github.nextjournal/clerk {:git/sha "d80187013d7b7b96db3d8b114b8d99f687170668"}}
+{:deps {io.github.nextjournal/clerk {:git/sha "d80187013d7b7b96db3d8b114b8d99f687170668"}
+        nrepl/nrepl {:mvn/version "1.0.0"}}
 
  :aliases
- {:nextjournal/garden {:exec-fn nextjournal.clerk/serve!
+ {:nextjournal/garden {:exec-fn clerk/serve!
                        :exec-args {:browse? false
                                    :watch-paths ["notebooks"]}}}}
